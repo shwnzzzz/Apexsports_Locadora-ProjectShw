@@ -8,7 +8,7 @@ O **ApexSports Locadora** é um projeto de landing page desenvolvido para uma lo
 
 🔗 **Acesse o projeto online:** https://shwnzzzz.github.io/Apexsports_Locadora-ProjectShw/
 
-<img src="ApexSports.png" width="80%">
+<img src="Apexsports.png" width="80%">
 
 ## ✨ Funcionalidades
 

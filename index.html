@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Apexsports | ProjectShw</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+  <nav><a class="logo" href="#home">Apexspots <b style="font-size:.55em;letter-spacing:.2em">LOCADORA</b></a>
+    <button id="burger" aria-label="Menu">☰</button>
+    <div class="links" id="lk"><a href="#home">Home</a><a href="#frota">Frota</a><a href="#sobre">Sobre nós</a><a
+        href="#contato">Contato</a><a class="btn sm" id="acct" href="#" role="button">Entrar</a></div>
+  </nav>
+
+  <section id="home">
+    <div id="grid"></div>
+    <div id="heroCv"><canvas id="heroGl"></canvas><img id="heroImg" alt="BMW M4"></div>
+    <div class="hero-t">
+      <div class="tag">Locação premium</div>
+      <h1>Sua próxima <span>experiência</span> começa aqui.</h1>
+      <p>Encontre o veículo ideal para sua jornada.</p>
+      <div class="cta"><a class="btn" href="#frota">Explorar veículos</a><a class="btn ghost" href="#frota"
+          id="rsv">Reservar agora</a></div>
+    </div>
+    <div id="search">
+      <div><label>Retirada</label><input type="date" id="s1"></div>
+      <div><label>Devolução</label><input type="date" id="s2"></div>
+      <div><label>Categoria</label><select id="s3"></select></div><button class="btn" id="sgo">Pesquisar</button>
+    </div>
+  </section>
+
+  <section id="frota">
+    <div class="tag">Nossa frota</div>
+    <h2>Escolha sua máquina</h2>
+    <div class="filters">
+      <div id="cats" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+      <div class="fl"><label>Preço máx. (diária)</label><select id="fp">
+          <option value="9999">Qualquer</option>
+          <option value="200">até R$ 200</option>
+          <option value="400">até R$ 400</option>
+          <option value="800">até R$ 800</option>
+        </select></div>
+      <div class="fl"><label>Disponibilidade</label><select id="fa">
+          <option value="0">Todos</option>
+          <option value="1">Apenas disponíveis</option>
+        </select></div>
+    </div>
+    <div id="grid2"></div>
+  </section>
+
+  <section id="sobre">
+    <div class="two">
+      <div>
+        <div class="tag">Sobre nós</div>
+        <h2>Velocidade, luxo e confiança</h2>
+        <p style="color:var(--mu);line-height:1.8">A APEX nasceu para transformar a locação de veículos em uma
+          experiência. Frota renovada, atendimento humano e tecnologia para que você reserve em segundos e dirija com
+          tranquilidade.</p>
+        <div class="mvv">
+          <div class="box">
+            <h3>MISSÃO</h3>
+            <p>Entregar mobilidade premium com transparência e agilidade.</p>
+          </div>
+          <div class="box">
+            <h3>VISÃO</h3>
+            <p>Ser a locadora mais desejada do país em experiência.</p>
+          </div>
+          <div class="box">
+            <h3>VALORES</h3>
+            <p>Confiança, excelência, paixão por carros e respeito ao cliente.</p>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><b data-n="120">0</b><span>Veículos na frota</span></div>
+        <div class="stat"><b data-n="8500">0</b><span>Clientes satisfeitos</span></div>
+        <div class="stat"><b>24/7</b><span>Assistência na estrada</span></div>
+        <div class="stat"><b data-n="100">0</b><span>% seguro incluso</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="two">
+      <div class="ci">
+        <div class="tag">Contato</div>
+        <h2>Fale com a gente</h2>
+        <p><b>WhatsApp / Telefone</b>+55 61 99999-9999</p>
+        <p><b>E-mail</b>contato@apexrent.com.br</p>
+        <p><b>Endereço</b>Av. das Nações, 1000 – Brasília/DF<br>Seg a Sáb, 8h às 20h</p>
+        <div
+          style="border:1px solid var(--ln);border-radius:8px;height:130px;display:grid;place-items:center;color:var(--mu);background:repeating-linear-gradient(45deg,#111,#111 12px,#151515 12px,#151515 24px)">
+          📍 Brasília – DF</div>
+      </div>
+      <form class="f" id="cf">
+        <div><label>Nome</label><input id="cn" required></div>
+        <div><label>E-mail</label><input id="ce" type="email" required></div>
+        <div><label>Mensagem</label><textarea id="cm" rows="4" required></textarea></div><button class="btn">Enviar pelo
+          WhatsApp</button>
+      </form>
+    </div>
+  </section>
+  <footer>© 2026 APEX Locadora. Todos os direitos reservados.</footer>
+  <div class="wa" id="wa"><a href="https://wa.me/qr/KPA4IH74FFNGK1" target="_blank" rel="noopener"
+      aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" width="30" height="30" fill="#fff" aria-hidden="true">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+      </svg></a>
+    <div class="waq"><img
+        src="data:image/png;base64,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"
+        alt="QR Code do WhatsApp"><span>Escaneie para conversar</span></div>
+  </div>
+
+  <div class="modal" id="m1">
+    <div class="mb"><button class="x" data-x>×</button>
+      <div class="dg">
+        <div>
+          <div class="tabs" id="vt"><button class="chip on" data-v="p">Fotos</button><button class="chip"
+              data-v="3">Modelo 3D</button></div><img id="dp" alt=""><canvas id="dv"></canvas>
+          <div id="sh" style="color:var(--mu);font-size:.75rem;margin:6px 0 10px">Arraste para girar · escolha a cor:
+          </div>
+          <div id="sw" style="display:flex;gap:8px"></div>
+          <h3 style="margin-top:22px">Disponibilidade</h3>
+          <div class="cal" id="cal"></div>
+        </div>
+        <div>
+          <div class="tag" id="dc"></div>
+          <h2 id="dn" style="margin:.2em 0 .4em"></h2>
+          <p id="dd" style="color:var(--mu);line-height:1.6;margin:0"></p>
+          <div class="sp" id="dsp"></div>
+          <div class="pr" id="dpr"></div>
+          <div class="row" style="gap:10px">
+            <div style="flex:1"><label>Retirada</label><input type="date" id="d1"></div>
+            <div style="flex:1"><label>Devolução</label><input type="date" id="d2"></div>
+          </div>
+          <div class="total" id="dt"></div><button class="btn" style="width:100%" id="dres">Reservar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="m2">
+    <div class="mb s"><button class="x" data-x>×</button>
+      <div class="tabs"><button class="chip on" data-t="in">Entrar</button><button class="chip"
+          data-t="up">Cadastrar</button></div>
+      <form class="f" id="af">
+        <div id="anw" style="display:none"><label>Nome</label><input id="an"></div>
+        <div><label>E-mail</label><input id="ae" type="email" required></div>
+        <div><label>Senha</label><input id="ap" type="password" required minlength="4"></div>
+        <div id="aerr" style="color:var(--or);font-size:.85rem"></div><button class="btn" id="abtn">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="m3">
+    <div class="mb"><button class="x" data-x>×</button>
+      <h2 style="margin-top:0">Área do cliente</h2>
+      <p id="uw" style="color:var(--mu)"></p>
+      <h3>Histórico de reservas</h3>
+      <div id="rl"></div><button class="btn ghost sm" id="out">Sair</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <script src="js/script.js"></script>
+</body>
+
+</html>
